@@ -1,4 +1,4 @@
-## Djando with PostgreSQL using Docker
+## Django with PostgreSQL using Docker
 
 #### A basic example of implementation of a api with Django using the Django Rest Framework library and Json web Token.
 
@@ -9,13 +9,17 @@
 Steps
 ---
 
-##### Step 1: Build the image:
+##### Step 1: Clone repository:
+    $ git clone https://github.com/vicabitu/basic-django-api-rest.git
+    $ cd basic-django-api-rest
+
+##### Step 2: Build the image:
     $ docker-compose build
 
-##### Step 2: Once the image is built, run the containers:
+##### Step 3: Once the image is built, run the containers:
     docker-compose up
 
-##### Step 3: Run the migrations:
+##### Step 4: Run the migrations:
     docker-compose exec web python manage.py migrate --noinput
 
 
